@@ -1,0 +1,1279 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/elusive-icons/2.0.0/css/elusive-icons.min.css">
+        <script src="./js/jquery.sticky.js"></script>
+        <link rel="stylesheet" href="./css/slick.css">
+        <link rel="stylesheet" href="./css/slick-theme.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <section class="container">
+            <main class="main">
+        <section itemscope="itemscope" itemtype="http://schema.org/Product" class="el-container"  >
+            <aside class="el-aside" style="width:auto;"  >
+              <div class="product-preview"   >
+                <div class="el-tabs el-tabs--left" style="height:420px;" >
+                  <div class="el-tabs__header is-left">
+                    <div class="el-tabs__nav-wrap is-left">
+                      <div class="el-tabs__nav-scroll">
+                        <div role="tablist" class="el-tabs__nav" style="transform:translateY(-0px);">
+                          <div class="el-tabs__active-bar is-left" style="height: 70px; transform: translateY(0px);">
+                          </div>
+                          <div id="tab-0" aria-controls="pane-0" role="tab" aria-selected="true" tabindex="0"
+                            class="el-tabs__item is-left is-active" onclick="changestt1()">
+                            <div  class="thumbnail active"><img 
+                                src="https://img1.cfcdn.club/b6/55/b6e96368d287cf517306f0b5efc05f55_200x200.jpg">
+                            </div>
+                          </div>
+                          <div id="tab-1" aria-controls="pane-1" role="tab" tabindex="-1"
+                            class="el-tabs__item is-left" onclick="changestt2()">
+                            <div  class="thumbnail"><img 
+                                src="https://img1.cfcdn.club/19/b1/19b1b0f1414965ca6bb4ebe5e7e681b1_200x200.jpg">
+                            </div>
+                          </div>
+                          <div id="tab-2" aria-controls="pane-2" role="tab" tabindex="-1"
+                            class="el-tabs__item is-left" onclick="changestt3()">
+                            <div  class="thumbnail"><img 
+                                src="https://img1.cfcdn.club/fa/7b/fa34d4f608e6f8a7f9f19a32832c0d7b_200x200.jpg">
+                            </div>
+                          </div>
+                          <div id="tab-3" aria-controls="pane-3" role="tab" tabindex="-1"
+                            class="el-tabs__item is-left" onclick="changestt4()">
+                            <div  class="thumbnail"><img 
+                                src="https://img1.cfcdn.club/d0/30/d0313130d69bb662fbbd8ec7b7f79630_200x200.jpg">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="el-tabs__content">
+                    <div role="tabpanel" id="pane-0" aria-labelledby="tab-0" class="el-tab-pane" style=""
+                      >
+                      <div class="preview" ><img
+                          src="https://img1.cfcdn.club/b6/55/b6e96368d287cf517306f0b5efc05f55_800x800.jpg"
+                          itemprop="image" ></div>
+                    </div>
+                    <div role="tabpanel" aria-hidden="true" id="pane-1" aria-labelledby="tab-1" class="el-tab-pane"
+                      style="display:none;" >
+                      <div class="preview" ><img
+                         src="https://img1.cfcdn.club/19/b1/19b1b0f1414965ca6bb4ebe5e7e681b1_800x800.jpg"
+                          itemprop="image" ></div>
+                    </div>
+                    <div role="tabpanel" aria-hidden="true" id="pane-2" aria-labelledby="tab-2" class="el-tab-pane"
+                      style="display:none;" >
+                      <div class="preview" ><img
+                          src="https://img1.cfcdn.club/fa/7b/fa34d4f608e6f8a7f9f19a32832c0d7b_800x800.jpg"
+                          itemprop="image" ></div>
+                    </div>
+                    <div role="tabpanel" aria-hidden="true" id="pane-3" aria-labelledby="tab-3" class="el-tab-pane"
+                      style="display:none;" >
+                      <div class="preview" ><img
+                          src="https://img1.cfcdn.club/d0/30/d0313130d69bb662fbbd8ec7b7f79630_800x800.jpg"
+                          itemprop="image" ></div>
+                    </div>
+                  </div>
+                  <script>
+                      var elements = document.getElementsByClassName("el-tabs__content");
+                      var i;
+              
+                      function changestt2() {
+                          console.log("2")
+                          const temp = document.getElementById("pane-1")
+                          if (temp.style.display == "none") {
+                              temp.style.display = "block"
+                              document.getElementById("pane-1").style.display = "block";
+                              document.getElementById("pane-1").classList.add("is-active");
+                              document.getElementById("pane-2").style.display = "none";
+                              document.getElementById("pane-2").classList.remove("is-active");
+                              document.getElementById("pane-3").classList.remove("is-active");
+                              document.getElementById("pane-3").style.display = "none";
+                              document.getElementById("pane-0").classList.remove("is-active");
+                              document.getElementById("pane-0").style.display = "none";
+                          }
+                      }
+                  </script>
+                  <script>
+                      var elements = document.getElementsByClassName("el-tabs__content");
+                      var i;
+              
+                      function changestt1() {
+                          console.log("1")
+                          const temp = document.getElementById("pane-0")
+                          if (temp.style.display == "none") {
+                              temp.style.display = "block"
+                              document.getElementById("pane-0").style.display = "block";
+                              document.getElementById("pane-0").classList.add("is-active");
+                              document.getElementById("pane-2").style.display = "none";
+                              document.getElementById("pane-2").classList.remove("is-active");
+                              document.getElementById("pane-3").classList.remove("is-active");
+                              document.getElementById("pane-3").style.display = "none";
+                              document.getElementById("pane-1").classList.remove("is-active");
+                              document.getElementById("pane-1").style.display = "none";
+                          }
+                      }
+                  </script>
+                  <script>
+                      var elements = document.getElementsByClassName("el-tabs__content");
+                      var i;
+              
+                      function changestt3() {
+                          console.log("3")
+                          const temp = document.getElementById("pane-2")
+                          if (temp.style.display == "none") {
+                              temp.style.display = "block"
+                              document.getElementById("pane-2").style.display = "block";
+                              document.getElementById("pane-2").classList.add("is-active");
+                              document.getElementById("pane-1").style.display = "none";
+                              document.getElementById("pane-1").classList.remove("is-active");
+                              document.getElementById("pane-3").classList.remove("is-active");
+                              document.getElementById("pane-3").style.display = "none";
+                              document.getElementById("pane-0").classList.remove("is-active");
+                              document.getElementById("pane-0").style.display = "none";
+                          }
+                      }
+                  </script>
+                  <script>
+                      var elements = document.getElementsByClassName("el-tabs__content");
+                      var i;
+              
+                      function changestt4() {
+                          console.log("4")
+                          const temp = document.getElementById("pane-3")
+                          if (temp.style.display == "none") {
+                              temp.style.display = "block"
+                              document.getElementById("pane-3").style.display = "block";
+                              document.getElementById("pane-3").classList.add("is-active");
+                              document.getElementById("pane-2").style.display = "none";
+                              document.getElementById("pane-2").classList.remove("is-active");
+                              document.getElementById("pane-1").classList.remove("is-active");
+                              document.getElementById("pane-1").style.display = "none";
+                              document.getElementById("pane-0").classList.remove("is-active");
+                              document.getElementById("pane-0").style.display = "none";
+                          }
+                      }
+                  </script>
+                </div>
+                <div class="btn-footer" ><button type="button"
+                    class="el-button btn-add-cart normal opacity el-button--danger" >
+                    <!---->
+                    <!----><span>THÊM VÀO GIỎ
+                    </span></button> <button type="button" class="el-button btn-add-cart normal el-button--danger"
+                    >
+                    <!---->
+                    <!----><span>
+                     MUA NGAY
+                    </span></button></div>
+              </div>
+              <div class="slider" id="slider">
+                  <div><img src="./img/product-1.jpg" alt="slider_1"></div>
+                  <div><img src="./img/product-2.jpg" alt="slider_2"></div>
+                  <div><img src="./img/product-3.jpg" alt="slider_1"></div>
+                  <div><img src="./img/product-4.jpg" alt="slider_1"></div>
+              </div>
+              <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+              <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+              <script src="./js/slick.js" type="text/javascript"></script>
+              <script src="./js/slick.min.js" type="text/javascript"></script>
+              <script>
+              $(document).ready(function() {
+                  $('.slider').slick({
+                      dots: true,
+                      arrows: false,
+                      autoplay: true,
+                      autoplaySpeed: 7000
+                  })
+              })
+              </script>
+            </aside>
+            <main class="el-main" style="padding-top:0;padding-bottom:0;"  >
+                <p itemprop="name" class="product-name"  >Phụ kiện nhà bếp Dụng cụ nấu ăn Trái cây Rau trợ cà chua Máy cắt lát hoàn hảo.</p>
+                <div class="product-no"  >
+                  Item NO.
+                  <div itemprop="sku" style="display:inline;"  >XXX000640519N</div> <span
+                     >Tax Included</span></div>
+                <div class="rate"  >
+                  <div role="slider" aria-valuenow="4.8" aria-valuetext="4.8 / 5.0" aria-valuemin="0" aria-valuemax="5"
+                    tabindex="0" class="el-rate"  ><span class="el-rate__item" style="cursor:auto;"><i class="el el-star" style="color: #F7BA2A"></i></span><span class="el-rate__item" style="cursor:auto;"><i
+                        class="el el-star" style="color:#F7BA2A;">
+                        <!----></i></span><span class="el-rate__item" style="cursor:auto;"><i
+                        class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                        <!----></i></span><span class="el-rate__item" style="cursor:auto;"><i
+                        class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                        <!----></i></span><span class="el-rate__item" style="cursor:auto;"><i
+                        class="el-rate__icon el-icon-star-on" style="color:#EFF2F7;"><i
+                          class="el-rate__decimal el-icon-star-on" style="color:#F7BA2A;width:50%;"></i></i></span><span
+                      class="el-rate__text" style="color:#ff9900;">4.8 / 5.0</span></div> <span class="rate-total"
+                     > | 11 Đánh giá</span>
+                </div>
+                <div class="product-price-group">
+                  <div itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer" class="product-price"
+                     ><span itemprop="price" class="price-num"  >2.17</span> <span
+                      content="USD" itemprop="priceCurrency" class="price-symbol"  >USD</span></div>
+                  <div class="circle-tag" style="color:;border-color:;" data-v-41dd25c7=""  ><span
+                      data-v-41dd25c7="">83%</span> <span data-v-41dd25c7="">off</span></div>
+                  <div class="circle-tag" style="color:#4A90E2;border-color:#4A90E2;" data-v-41dd25c7=""
+                     ><span data-v-41dd25c7="">305</span> <span data-v-41dd25c7="">orders</span></div>
+                </div>
+                <div class="sku-choose">
+                    <div class="attr-row-color">
+                        <div class="attr-label" ><span >Màu sắc</span>
+                          <div class="size-chart-dialog"  >
+                            <div class="el-dialog__wrapper" style="display:none;" >
+                              <div class="el-dialog" style="margin-top:15vh;">
+                                <div class="el-dialog__header">
+                                  <div ><img
+                                      src="./img/seemore.jpg"
+                                      class="logo" ></div><button type="button" aria-label="Close"
+                                    class="el-dialog__headerbtn"><i
+                                      class="el-dialog__close el-icon el-icon-close" onclick="chosesize()"></i></button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div data-v-22c31a1f="" class="select-item" style="display: none">
+                            </div>
+    
+                        </div>
+                        <ul class="attr-group" >
+                          <li class="color-1" id="gray" onclick="buy1()">
+                            Xám
+                          </li>
+                          <li class="color-2" id="yellow" onclick="buy2()">
+                            Vàng
+                          </li>
+                          <li class="color-3" id="violet" onclick="buy3()">
+                            Tím
+                          </li>
+                          <li class="color-4" id="blue" onclick="buy4()">
+                            Xanh
+                          </li>
+                          <li class="color-5" id="red" onclick="buy5()">
+                            Đỏ
+                          </li>
+                        </ul>
+                      </div>
+                  <div class="attr-row" >
+                    <div class="attr-label" ><span >Kích thước</span>
+                      <div class="size-chart-dialog"  >
+                        <div class="el-dialog__wrapper" style="display:none;" >
+                          <div class="el-dialog" style="margin-top:15vh;">
+                            <div class="el-dialog__header">
+                              <div ><img
+                                  src="./img/seemore.jpg"
+                                  class="logo" ></div><button type="button" aria-label="Close"
+                                class="el-dialog__headerbtn"><i
+                                  class="el-dialog__close el-icon el-icon-close" onclick="chosesize()"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="select-item" style="display: none">
+                        </div>
+
+                    </div>
+                    <ul class="attr-group" >
+                      <li class="29" id="29" onclick="buy29()">
+                        29
+                      </li>
+                      <li class="30" id="30" onclick="buy30()">
+                        30
+                      </li>
+                      <li class="31" id="31" onclick="buy31()">
+                        31
+                      </li>
+                      <li class="32" id="32" onclick="buy32()">
+                        32
+                      </li>
+                      <li class="33" id="33" onclick="buy33()">
+                        33
+                      </li>
+                      <li class="34" id="34" onclick="buy34()">
+                        34
+                      </li>
+                      <li class="35" id="35" onclick="buy35()">
+                        35
+                      </li>
+                    </ul>
+                  </div>
+                  <script>
+                      var elements = document.getElementsByClassName("attr-group");
+              
+                      function buy1() {
+                          console.log("click-buy1")
+                          const temp = document.getElementById("gray")
+                              document.getElementById("gray").classList.add("active");
+                              document.getElementById("red").classList.remove("active");
+                              document.getElementById("yellow").classList.remove("active");
+                              document.getElementById("violet").classList.remove("active");
+                              document.getElementById("blue").classList.remove("active");
+                      }
+                      function buy2() {
+                          console.log("click-buy2")
+                          const temp = document.getElementById("yellow")
+                              document.getElementById("yellow").classList.add("active");
+                              document.getElementById("red").classList.remove("active");
+                              document.getElementById("gray").classList.remove("active");
+                              document.getElementById("violet").classList.remove("active");
+                              document.getElementById("blue").classList.remove("active");
+                      }
+                      function buy3() {
+                          console.log("click-buy3")
+                          const temp = document.getElementById("violet")
+                              document.getElementById("violet").classList.add("active");
+                              document.getElementById("red").classList.remove("active");
+                              document.getElementById("yellow").classList.remove("active");
+                              document.getElementById("gray").classList.remove("active");
+                              document.getElementById("blue").classList.remove("active");
+                      }
+                      function buy4() {
+                          console.log("click-buy4")
+                          const temp = document.getElementById("blue")
+                              document.getElementById("blue").classList.add("active");
+                              document.getElementById("red").classList.remove("active");
+                              document.getElementById("yellow").classList.remove("active");
+                              document.getElementById("violet").classList.remove("active");
+                              document.getElementById("gray").classList.remove("active");
+                      }
+                      function buy5() {
+                          console.log("click-buy5")
+                          const temp = document.getElementById("red")
+                              document.getElementById("red").classList.add("active");
+                              document.getElementById("gray").classList.remove("active");
+                              document.getElementById("yellow").classList.remove("active");
+                              document.getElementById("violet").classList.remove("active");
+                              document.getElementById("blue").classList.remove("active");
+                      }
+                      function buy29() {
+                          console.log("click-buy29")
+                          const temp = document.getElementById("29")
+                              document.getElementById("29").classList.add("active");
+                              document.getElementById("30").classList.remove("active");
+                              document.getElementById("31").classList.remove("active");
+                              document.getElementById("32").classList.remove("active");
+                              document.getElementById("33").classList.remove("active");
+                              document.getElementById("34").classList.remove("active");
+                              document.getElementById("35").classList.remove("active");
+                      }
+                      function buy30() {
+                          console.log("click-buy30")
+                          const temp = document.getElementById("30")
+                              document.getElementById("30").classList.add("active");
+                              document.getElementById("29").classList.remove("active");
+                              document.getElementById("31").classList.remove("active");
+                              document.getElementById("32").classList.remove("active");
+                              document.getElementById("33").classList.remove("active");
+                              document.getElementById("34").classList.remove("active");
+                              document.getElementById("35").classList.remove("active");
+                      }
+                      function buy31() {
+                          console.log("click-buy31")
+                          const temp = document.getElementById("31")
+                              document.getElementById("31").classList.add("active");
+                              document.getElementById("30").classList.remove("active");
+                              document.getElementById("29").classList.remove("active");
+                              document.getElementById("32").classList.remove("active");
+                              document.getElementById("33").classList.remove("active");
+                              document.getElementById("34").classList.remove("active");
+                              document.getElementById("35").classList.remove("active");
+                      }
+                      function buy32() {
+                          console.log("click-buy32")
+                          const temp = document.getElementById("32")
+                              document.getElementById("32").classList.add("active");
+                              document.getElementById("30").classList.remove("active");
+                              document.getElementById("31").classList.remove("active");
+                              document.getElementById("29").classList.remove("active");
+                              document.getElementById("33").classList.remove("active");
+                              document.getElementById("34").classList.remove("active");
+                              document.getElementById("35").classList.remove("active");
+                      }
+                      function buy33() {
+                          console.log("click-buy33")
+                          const temp = document.getElementById("33")
+                              document.getElementById("33").classList.add("active");
+                              document.getElementById("30").classList.remove("active");
+                              document.getElementById("31").classList.remove("active");
+                              document.getElementById("32").classList.remove("active");
+                              document.getElementById("29").classList.remove("active");
+                              document.getElementById("34").classList.remove("active");
+                              document.getElementById("35").classList.remove("active");
+                      }
+                      function buy34() {
+                          console.log("click-buy34")
+                          const temp = document.getElementById("34")
+                              document.getElementById("34").classList.add("active");
+                              document.getElementById("30").classList.remove("active");
+                              document.getElementById("31").classList.remove("active");
+                              document.getElementById("32").classList.remove("active");
+                              document.getElementById("33").classList.remove("active");
+                              document.getElementById("29").classList.remove("active");
+                              document.getElementById("35").classList.remove("active");
+                      }
+                      function buy35() {
+                          console.log("click-buy35")
+                          const temp = document.getElementById("35")
+                              document.getElementById("35").classList.add("active");
+                              document.getElementById("30").classList.remove("active");
+                              document.getElementById("31").classList.remove("active");
+                              document.getElementById("32").classList.remove("active");
+                              document.getElementById("33").classList.remove("active");
+                              document.getElementById("34").classList.remove("active");
+                              document.getElementById("29").classList.remove("active");
+                      }
+                  </script>
+                  <div class="attr-row quantity" >
+                    <p class="attr-label" ><span >Số Lượng</span></p>
+                    <div class="input-number">
+                        <div  class="text-center"><input class="variantID" type="hidden" name="variantId" value="18765235"><button onclick="var result = document.getElementById('qtyItem18765235'); var qtyItem18765235 = result.value; if( !isNaN( qtyItem18765235 ) &amp;&amp; qtyItem18765235 > 1 ) result.value--;return false;"  class="reduced items-count btn-minus" type="button">–</button><input type="text" maxlength="12" min="0" class="input-text number-sidebar qtyItem18765235" id="qtyItem18765235" name="Lines" size="4" value="1">
+                          <button onclick="var result = document.getElementById('qtyItem18765235'); var qtyItem18765235 = result.value; if( !isNaN( qtyItem18765235 )) result.value++;return false;" class="increase items-count btn-plus" type="button">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card delivery">
+                        <div class="card-title" style="font-size:18px;padding-bottom:10px;margin-top:30px;"
+                           ><span  >Giao Hàng</span> <span class="sub-title"
+                             ></span></div>
+                        <div class="free-shipping-box"    >
+                          <div    >Miễn Phí Giao Hàng</div> <span  
+                             >1-4 Ngày</span>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-title" style="font-size:18px;padding-bottom:10px;margin-top:30px;"
+                           ><span  >Chi tiết sản phẩm</span> <span class="sub-title"
+                             ></span></div>
+                        <div class="description">
+                          <table>
+                            <tbody>
+                              <tr>
+                                <td>Tên sản phẩm</td>
+                                <td>Dụng cụ cắt lát rau quả đa năng
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Chất liệu</td>
+                                <td>nhựa plasticx</td>
+                              </tr>
+                              <tr>
+                                <td>Trọng lượng</td>
+                                <td>55 grams</td>
+                              </tr>
+                              <tr>
+                                <td>Danh sách đóng gói</td>
+                                <td>1 sets</td>
+                              </tr>
+                              <tr>
+                                <td>Danh mục sản phẩm</td>
+                                <td>Máy cắt rau quả đa năng</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="desc-more">
+                            <table>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                          <!---->
+                        </div>
+                      </div>
+                       <!-- <div class="card"    >
+                        <div class="card-title" style="font-size:18px;padding-bottom:10px;margin-top:30px;"
+                           ><span  >Đánh giá sản phẩm</span> <span class="sub-title"
+                             ></span></div>
+                        <div class="comments" data-v-f469fd12=""    >
+                          <div class="comments-summary" data-v-f469fd12="">
+                            <div class="comments-total" data-v-f469fd12="">4.8/5</div>
+                            <div class="comments-rates" data-v-f469fd12=""><span class="comments-rates-text"
+                                data-v-f469fd12="">Hài Lòng</span>
+                              <div role="slider" aria-valuenow="4.8" aria-valuetext="" aria-valuemin="0" aria-valuemax="5"
+                                tabindex="0" class="el-rate comments-rate-star" data-v-f469fd12=""><span class="el-rate__item"
+                                  style="cursor:auto;"><i class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                    </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                    class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                    </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                    class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                    </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                    class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                    </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                    class="el-rate__icon el-icon-star-on" style="color:#EFF2F7;"><i
+                                      class="el-rate__decimal el-icon-star-on"
+                                      style="color:#F7BA2A;width:50%;"></i></i></span>
+                                
+                              </div> <span class="comments-rates-num" data-v-f469fd12="">11 Ratings</span>
+                            </div>
+                          </div>
+                          <div class="comment-item" data-v-43922bf8="" data-v-f469fd12="">
+                            <div class="comment-info" data-v-43922bf8="">
+                              <div class="comment-user" data-v-43922bf8="">
+                                <div class="comment-avatar" data-v-43922bf8="">P</div> <span class="comment-name"
+                                  data-v-43922bf8="">P B.</span>
+                              </div>
+                              <div class="comment-rate" data-v-43922bf8="">
+                                <div class="comment-rate-text" data-v-43922bf8="">Hài lòng</div>
+                                <div role="slider" aria-valuenow="4.7" aria-valuetext="" aria-valuemin="0" aria-valuemax="5"
+                                  tabindex="0" class="el-rate" data-v-43922bf8=""><span class="el-rate__item"
+                                    style="cursor:auto;"><i class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                     </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#EFF2F7;"><i
+                                        class="el-rate__decimal el-icon-star-on"
+                                        style="color:#F7BA2A;width:50%;"></i></i></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="comment-time" data-v-43922bf8=""><span data-v-43922bf8="">8/9/2018, 6:17:36 PM</span>
+                              <span class="comment-sku" data-v-43922bf8="">18*8*4.5CM</span></div>
+                            <p class="comment-content" data-v-43922bf8="">Chất lượng tốt với chi phí phải chăng. Rất khuyến khích
+                            </p>
+                            <div class="comment-images-container" data-v-15678255="" data-v-43922bf8="">
+                              <div class="comment-images" data-v-15678255="">
+                                <div class="image"
+                                  style="background:url(https://r.cfcdn.club/a7/85/a7ff5a6179c10c4c346a2d47b95580c591177385_350x350.jpg) no-repeat center center / 100%;"
+                                  data-v-15678255=""></div>
+                              </div>
+                              <div class="clear" data-v-15678255=""></div>
+                            </div>
+                          </div>
+                          <div class="comment-item" data-v-43922bf8="" data-v-f469fd12="">
+                            <div class="comment-info" data-v-43922bf8="">
+                              <div class="comment-user" data-v-43922bf8="">
+                                <div class="comment-avatar" data-v-43922bf8="">M</div> <span class="comment-name"
+                                  data-v-43922bf8="">M*****i A.</span>
+                              </div>
+                              <div class="comment-rate" data-v-43922bf8="">
+                                <div class="comment-rate-text" data-v-43922bf8="">Hài lòng</div>
+                                <div role="slider" aria-valuenow="5" aria-valuetext="" aria-valuemin="0" aria-valuemax="5"
+                                  tabindex="0" class="el-rate" data-v-43922bf8=""><span class="el-rate__item"
+                                    style="cursor:auto;"><i class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="comment-time" data-v-43922bf8=""><span data-v-43922bf8="">6/16/2018, 10:28:57
+                                AM</span> <span class="comment-sku" data-v-43922bf8="">18*8*4.5CM</span></div>
+                            <p class="comment-content" data-v-43922bf8="">TMáy cắt chanh này được sử dụng để cắt chanh, tôi có thể dễ dàng làm công việc của tôi tại nhà bếp. cảm ơn bạn</p>
+                            <div class="comment-images-container" data-v-15678255="" data-v-43922bf8="">
+                              <div class="comment-images" data-v-15678255=""></div>
+                              <div class="clear" data-v-15678255=""></div>
+                            </div>
+                          </div>
+                          <div class="comment-item" data-v-43922bf8="" data-v-f469fd12="">
+                            <div class="comment-info" data-v-43922bf8="">
+                              <div class="comment-user" data-v-43922bf8="">
+                                <div class="comment-avatar" data-v-43922bf8="">S</div> <span class="comment-name"
+                                  data-v-43922bf8="">s****i K.</span>
+                              </div>
+                              <div class="comment-rate" data-v-43922bf8="">
+                                <div class="comment-rate-text" data-v-43922bf8="">Hài lòng</div>
+                                <div role="slider" aria-valuenow="5" aria-valuetext="" aria-valuemin="0" aria-valuemax="5"
+                                  tabindex="0" class="el-rate" data-v-43922bf8=""><span class="el-rate__item"
+                                    style="cursor:auto;"><i class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      /i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span><span class="el-rate__item" style="cursor:auto;"><i
+                                      class="el-rate__icon el-icon-star-on" style="color:#F7BA2A;">
+                                      </i></span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="comment-time" data-v-43922bf8=""><span data-v-43922bf8="">12/22/2017, 5:27:56
+                                PM</span> <span class="comment-sku" data-v-43922bf8="">18*8*4.5CM</span></div>
+                            <p class="comment-content" data-v-43922bf8="">hàng rất chất lượng , thank người sáng tạo </p>
+                            <div class="comment-images-container" data-v-15678255="" data-v-43922bf8="">
+                              <div class="comment-images" data-v-15678255=""></div>
+                              <div class="clear" data-v-15678255=""></div>
+                            </div>
+                          </div> 
+                        </div> -->
+                      </div>
+                      <div class="club-info">
+                        <div class="club-group" ><a
+                            href="https://www.clubfactory.com/document/factory-price" target="_blank" class="club-row"
+                            ><i class="iconfont icon-goubianyixianshizhekou" ></i> <span
+                              >Giá xuất xưởng</span></a> <a
+                            href="https://www.clubfactory.com/document/return-policy" target="_blank" class="club-row"
+                            ><i class="iconfont icon-tuihuanhuo1" ></i> <span
+                              >9 ngày<br>Đổi trả hàng dễ dàng</span></a> <a
+                            href="https://www.clubfactory.com/document/payment-protection" target="_blank" class="club-row"
+                            ><i class="iconfont icon-anquanzhifu" ></i> <span
+                              >100%<br>Thanh toán an toàn</span></a></div>
+                        <div class="club-dest" >
+                          <p class="p1" >Nguồn cung ứng toàn cầu, Giá xuất xưởng.</p>
+                          <p class="p2" >Cuộc sống tốt đẹp Không cần phải đắt đỏ </p> <img
+                            src="./img/seemore.jpg"
+                             id="see-it" style="display: none">
+                          <div class="see-more"  id="seemore" onclick="more()">Xem thêm</div>
+                          <div class="see-less"  id="seeless" onclick="less()">Ẩn bớt</div>
+                        </div>
+                      </div>
+                    </main>
+                  </section>
+                  <script>
+                    var elements = document.getElementsByClassName("club-dest");
+                    function more() {
+                        const temp = document.getElementById("seeless")
+                        if (temp.style.display == "none") {
+                            temp.style.display = "block"
+                            document.getElementById("see-it").style.display = "block"
+                        } else {
+                            if (document.getElementById("seeless").style.display = "block") {
+                                temp.style.display = "none"
+                            document.getElementById("seemore").style.display = "block"
+                            } else {
+                                temp.style.display = "block"
+                                document.getElementById("seeless").style.display = "block"
+                            }
+                        }
+                        document.getElementById("seeless").style.display = "block"
+                        document.getElementById("see-it").style.display = "block"
+                        document.getElementById("seemore").style.display = "none"
+                    }
+                  </script>
+                  <script>
+                    var elements = document.getElementsByClassName("club-dest");
+                    function less() {
+                        const temp = document.getElementById("seemore")
+                        if (temp.style.display == "none") {
+                            temp.style.display = "block"
+                            document.getElementById("see-it").style.display = "none"
+                        } else {
+                            if (document.getElementById("seemore").style.display = "block") {
+                                temp.style.display = "none"
+                            } else {
+                                temp.style.display = "block"
+                                document.getElementById("seemore").style.display = "block"
+                            }
+                        }
+                        document.getElementById("seeless").style.display = "none"
+                        document.getElementById("see-it").style.display = "none"
+                        document.getElementById("seemore").style.display = "block"
+                    }
+                  </script>
+                  <div class="card">
+                    <div class="card-title" style="font-size:18px;padding-bottom:10px;margin-top:30px;"  >
+                      <span  >Sản phẩm tương tự</span> <span class="sub-title"  ></span>
+                    </div>
+                    <div infinite-scroll-disabled="isDisabled" infinite-scroll-distance="500" class="product-list"
+                        >
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/567379" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/f8/fd/f87f8f06f4d1df858ac11fb64a5cc0fd_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.11</span> <span class="discount" >75% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                4</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/659590" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/43/ab/43c7988e7749dc4774081171e408a0ab_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.33</span> <span class="discount" ></span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                1.77</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2196923" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/d6/5f/d64e8e080aa74cc6c42dbce7aee87e5f_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                3.13</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                6.48</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/969193" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/e3/ac/e3ef116b9ad1a7ce55b0fe0ec55503ac_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.02</span> <span class="discount" >33% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.47</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/406048" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/fc/84/fcdf2ad6296681b8e8dd89595bd34984_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.59</span> <span class="discount" >92% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                12.23</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/996349" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/f7/f0/f71957e1222627b90a1322299a66b6f0_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.28</span> <span class="discount" ></span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                2.89</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/1643956" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/a4/fc/a4a87d2f2853719bf6fce4dd3e0feafc_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.91</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                2.49</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2036858" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/45/ef/4511c0f9a187937097c3051d967ff0ef_350x350.jpg) no-repeat center center / contain;"
+                            >
+x                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.35</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                2.50</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2356708" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/38/b2/38d24b4115ccbb4697b27a7948ed76b2_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                7.40</span> <span class="discount" >80% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                35.24</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2150296" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/07/cc/0773f9824ea34ce23db0480843d1bbcc_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                18.82</span> <span class="discount" >94% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                313.67</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/473416" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/10/ee/1000056ea94c6860c3cccfc67c0392ee_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.55</span> <span class="discount" >83% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                6.90</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/3231220" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/0b/73/0b2383d648166d8717eb98010ef0b173_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                4.35</span> <span class="discount" >71% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                14.11</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2175600" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/8a/35/8a967173b86d39856d492bcfe923aa35_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.90</span> <span class="discount" >67% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.19</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/1815916" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/7d/7f/7de3f28ce4a80e9dcbdb58bdeee7087f_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.94</span> <span class="discount" >67% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.09</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2552899" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/0b/6e/0b70c44d750857c095eea60a77963d6e_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.74</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                4.15</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2109717" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/bc/95/bcb79e83e5d2fc66be2c2f2518d72795_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.10</span> <span class="discount" >33% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.62</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2141575" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/54/bb/5442b482c1d52d9cab8e0f90f49642bb_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.90</span> <span class="discount" >71% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                7.84</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/1200475" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/86/13/86e72ff6288acf01c4fc9db24639de13_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                4.68</span> <span class="discount" >91% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                46.80</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/493595" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/09/1b/0956ed26c660530913d0b002187c0c1b_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.31</span> <span class="discount" ></span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                1.70</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/1135716" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/7a/82/7a5195fb74f83cbdac677f0ab603c782_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.24</span> <span class="discount" >67% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.81</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2887476" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/57/8f/5736bd7dc59b0b50a3fb451c3cc3f28f_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.26</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                2.64</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2422763" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/74/54/745527e2b76e8a6e2ebcf8d6bb846854_350x350.jpg) no-repeat center center / contain;"
+                            >
+                            <!---->
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                3.04</span> <span class="discount" >90% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                30.40</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/592266" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/f9/c4/f9c58fbd7a03ebc646c081cf7bb36ec4_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                7.40</span> <span class="discount" >61% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                18</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/459279" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/ad/de/ad8acdba9db12f70da5e492f7fe1b0de_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.59</span> <span class="discount" >95% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                22</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2137215" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/e6/8d/e673d43456b818cbe6e3ad636460048d_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                4.48</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                8.62</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2128181" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/d5/17/d5aa37aebfc484ccedb9a2d8f96cf317_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.42</span> <span class="discount" >33% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.03</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2219326" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/d6/42/d61f5680e4a6b7f7e11e1c2ebb09bb42_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.27</span> <span class="discount" >80% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                5.77</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/641209" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/17/1e/1779ba3b83644f068b4a8be9b81ce51e_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.48</span> <span class="discount" >67% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/865091" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/75/ce/75e890db91cc0d8561cd45fe2cf7c3ce_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                4.10</span> <span class="discount" >64% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                11</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2030627" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/8f/05/8fa4d58e92a718f69f3edf156aafb805_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.45</span> <span class="discount" >33% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                3.28</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2799419" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/db/06/db5ab6d48acebb7363e7efc760bead06_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.82</span> <span class="discount" >86% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                7</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2109661" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/47/f5/47785e01d8fd6633239ba9a12f4b94f5_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.37</span> <span class="discount" >67% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                6.77</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/971651" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/b4/c1/b4000d0589cc8f5d1e4fb4a967b801c1_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.98</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                2.77</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/978008" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/2f/88/2f4a5756af2c3dbbd1c8c892735dbe88_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD 4</span>
+                              <span class="discount" >87% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                30.77</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2148479" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/e2/58/e2e9c54187602102dea4ccd370412858_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.09</span> <span class="discount" >94% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                34.83</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/566234" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/ed/b3/eda0d4b595ab5eb9b04975f53be0a3b3_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                2.30</span> <span class="discount" >75% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                8</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/659591" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/b6/90/b61e5226e07ab36e9d88cff869131690_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.70</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                2.83</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/404109" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/9c/c8/9ceeba73808bdb9c49bc1c3bb036ffc8_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                1.64</span> <span class="discount" >83% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                6</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/978630" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/5c/b3/5c4452fbd615a39457b7321e66b5f5b3_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                3.38</span> <span class="discount" >79% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                14.70</span></div>
+                          </div>
+                        </a></div>
+                      <div class="product-item"><a
+                          href="https://www.clubfactory.com/product/2276970" target="_blank"  class="">
+                          <div class="product-image"
+                            style="background:url(https://img1.cfcdn.club/27/b4/2721b611c2dd3bba8b1d2249df00cbb4_350x350.jpg) no-repeat center center / contain;"
+                            >
+                          </div>
+                          <div class="product-info" >
+                            <div class="product-price" ><span class="price" >USD
+                                3.20</span> <span class="discount" >50% off</span></div>
+                            <div class="third-price" ><span class="platform-price" >USD
+                                6.67</span></div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                </div>
+              <div class="cf_pc_footer" >
+                  <div  class="footer">
+                      <div class="btn-home"><i class="iconfont icon-fanhui"></i> <span
+                         >Trang Chủ</span></div>
+                      <div class="btn-cart"><i class="iconfont icon-gouwuche"></i>
+                      </div>
+                      <div class="btn-group btn-add-cart">
+                        Thêm vào giỏ hàng
+                      </div>
+                      <div class="btn-group btn-buy-now">
+                        Mua Ngay
+                      </div>
+                    </div>
+                    <!-- <div data-v-5f71ae9e=""  class="product-cart-modal" id="poduct-modal">
+                        <div data-v-5f71ae9e="" class="modal-content-wrap">
+                          <div data-v-5f71ae9e="" class="modal-content modal-slide-up">
+                            <div data-v-5f71ae9e="" class="modal-header"><i data-v-5f71ae9e=""
+                                class="iconfont icon-guanbi_cp parity-close"></i>
+                              <div data-v-5f71ae9e="" class="img-wrap"><img data-v-5f71ae9e=""
+                                  src="./img/product-4-4.jpg">
+                              </div>
+                              <div data-v-5f71ae9e="" class="pro-title">
+                                <p data-v-5f71ae9e="" class="product-name">Kitchen Accessories Cooking Tools Fruits Vegetables
+                                  Assistant Tomato Perfect Slicer.</p>
+                                <p data-v-5f71ae9e="" class="product-price">VND 41115.75
+                                </p>
+                              </div>
+                            </div>
+                            <div data-v-5f71ae9e="" class="modal-body">
+                              <section data-v-5f71ae9e="" class="section">
+                                <p data-v-5f71ae9e="" class="label">Size
+                                  <a data-v-5f71ae9e="" href="https://m.clubfactory.com/size?categoryIds=61419249"
+                                    class="size-chart">Size Chart&nbsp;&gt;</a></p>
+                                <div data-v-5f71ae9e="" class="attr-group"><button data-v-5f71ae9e="" class="">
+                                    18*8*4.5CM
+                                  </button></div>
+                              </section>
+                              <section data-v-5f71ae9e="" class="quantity-section">
+                                <p data-v-5f71ae9e="" class="label">Quantity</p>
+                                <div data-v-5f71ae9e="" class="quantity-group"><button data-v-5f71ae9e="" class="btn-div">-</button>
+                                  <span data-v-5f71ae9e="" class="quantity">1</span> <button data-v-5f71ae9e=""
+                                    class="btn-div">+</button></div>
+                              </section>
+                            </div> <button data-v-5f71ae9e="" class="md-btn md-btn-primary md-btn-confirm">Confirm</button>
+                          </div>
+                        </div>
+                      </div>
+                      <script>
+                          var  elements = document.getElementsByClassName("select-item");
+
+                          function picksize() {
+                            console.log("abc")
+                              const temp = document.getElementById("poduct-modal")
+                              if (temp.style.display == "none !important") {
+                                  temp.style.display = "block !important"
+                              } else {
+                                  if (document.getElementById("poduct-modal").style.display = "none") {
+                                      temp.style.display = "block !important"
+                                  } else {
+                                      temp.style.display = "block !important"
+                                      document.getElementById("poduct-modal").style.display = "block !important"
+                                  }
+                              }
+                              document.getElementById("poduct-modal").style.display = "block !important"
+                          }
+                        </script>
+                        </section>
+                    <!---->
+                    <!---->
+                  </div>
+              </div>
+            
+          </div>
+            </main>
+            </section>
+    </body>
+</html>
